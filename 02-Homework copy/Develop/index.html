@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <lnk rel="script" href="script.js"/>
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="java.js">
+
+
+
+// Agnostically store data (array, object) - definitions
+      // staticCharacters - Non sequential - oject based on key (file cabinent)
+      var passwordData = {  
+        number: "123456789",
+        uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        lowercase: "abcdefghijklmnopqrstuvwxyz",
+        symbol:"!@#$%^&*()",
+      }
+
+// if i want to grab the letter at the 7th index of uppercase
+  // .random(min,max)
+var getPasswordData = passwordData.uppercase.random[0,128];
+
+// if i want to console.log every letter in a string:
+for (i = 0; i < passwordData.uppercase.length; i++) {
+  console.log(passwordData.uppercase[i]);
+}
+
+      // oject that stores decision of trueand false
+      var criteraDecision = {
+        isUppercase: true,
+        isLowercase: true,
+        isNumber: true,
+        isSymbol: true,
+        length: 0,
+      }
+    // if uppercase = true then select one uppcase letter
+    // if lowercase is yes and numbers is yes then 1 lowercase and 1 number
+    // if length is defined
+      if (uppercase === true) {
+        minimumUppercase = functionArray.getpasswordData();
+        minimumCount++;
+      if (lowercase === true) {
+        minimumLowercase = functionArray.getpasswordData();
+        minimumCount++;
+      if (number === true) {
+        minimumLowercase = functionArray.getpasswordData();
+        minimumCount++;
+      if (symbol === true) {
+        minimumLowercase = functionArray.getpasswordData();
+        minimumCount++;
+
+
+
+
+
+    // first grab from passwordData object - find lowercase key ver and number key--> then ask random command to 
+
+
+
+// Assignment Code (Given)
+        var generateBtn = document.querySelector("#generate"); 
+        
+
+
+
+// WHEN I click the button to generate a password
+      // need on click event listener
+
+
+      // THEN I am presented with a series of prompts for password criteria
+        // THEN my input should be validated and at least one character type should be selected
+      // How long do you want you password to be? (numerical)
+          var passwordLength = prompt ("How long do you want your password to be");
+      // Do you want uppercase letters?
+          var upperrcase = confirm ("Do you want uppercase letters?")
+      // Do you want lowercase letters?
+          var lowercase = confirm ("Do you want lowercase letters?")
+      // Do you want to have numbers?
+          var number = confirm ("Do you want numbers?")
+      // Do you want special characters?
+          var symbol = confirm ("Do you want symbols?")
+
+
+      // Write password to the #password input
+
+
+
+// GivenCode
+      function writePassword() {
+      var password = generatePassword;
+      var passwordText = document.querySelector("#password");
+        
+
+
+      passwordText.value = password;
+
+}
+  
+
+
+
+// WHEN all prompts are answered
+// THEN a password is generated that matches the selected criteria
+// WHEN the password is generated
+// THEN the password is either displayed in an alert or written to the page
+
+      // Add event listener to generate button (Given)
+      generateBtn.addEventListener("click", writePassword);
+      
+
+
+
+
+    </script>
+  </body>
+</html>
