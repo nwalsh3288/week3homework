@@ -32,7 +32,7 @@
     
         var promptTest = function(){
             // How long do you want you password to be? (numerical)
-            var passwordLength = prompt ("How long do you want your password to be");
+            var passwordLength = prompt ("How long do you want your password to be? (min 15 characters");
             criteriaDecision.length = passwordLength;
            // Do you want uppercase letters?
              var uppercase = confirm ("Do you want uppercase letters?");
